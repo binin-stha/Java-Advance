@@ -19,8 +19,8 @@ public class Repository<T extends Identifiable> {
 
     }
 
-    public void delete(T record) {
-        records.remove(record);
+    public void deleteById(int id) {
+        records.remove(id-1);
     }
 
     public T findById(int id) {
