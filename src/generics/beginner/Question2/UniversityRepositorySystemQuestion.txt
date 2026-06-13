@@ -1,0 +1,33 @@
+Problem G2: University Repository System
+
+Difficulty: Beginner
+
+Scenario
+
+A university wants a reusable repository for managing different types of records.
+
+Requirements
+
+Create:
+
+Repository<T>
+
+Operations:
+
+save(T record)
+delete(T record)
+findById(int id)
+findAll()
+
+Use it with:
+
+Student
+Teacher
+Course
+
+Bonus
+
+Prevent duplicate entries.
+
+Concepts Practiced
+Reusable Generic Components
