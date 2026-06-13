@@ -1,0 +1,33 @@
+Difficulty: Beginner
+
+Scenario
+
+A logistics company needs a storage system capable of storing different categories of inventory without duplicating code.
+
+Requirements
+
+Create a generic class:
+
+Storage<T>
+
+Implement:
+
+void add(T item)
+T get(int index)
+void remove(int index)
+List<T> getAll()
+
+Use the storage for:
+
+Electronics
+Furniture
+Clothing
+
+Bonus
+
+Add a method:
+
+boolean contains(T item)
+Concepts Practiced
+Generic Classes
+Type Safety
