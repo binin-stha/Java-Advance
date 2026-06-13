@@ -1,0 +1,28 @@
+Problem G3: Online Shopping Cart
+
+Difficulty: Beginner
+
+Scenario
+
+An e-commerce platform requires shopping carts for multiple product categories.
+
+Requirements
+
+Create:
+
+Cart<T>
+
+Features:
+
+Add item
+Remove item
+View items
+Get total item count
+
+Use with:
+
+Books
+Laptops
+Grocery Items
+Concepts Practiced
+Generic Collections
