@@ -1,0 +1,77 @@
+Problem G4: Notification Delivery Engine
+
+Difficulty: Intermediate
+
+Scenario
+
+A cloud-based communication platform is used by businesses to send notifications to their customers through multiple channels. The platform currently supports email notifications, SMS alerts, and mobile push notifications.
+
+The development team wants to create a flexible notification engine that can handle any type of notification without duplicating code for every notification channel.
+
+Requirements
+
+Design a generic notification system that can send different types of messages using a single service implementation.
+
+Create the Following Classes
+1. EmailMessage
+
+Fields:
+
+recipientEmail
+subject
+content
+2. SMSMessage
+
+Fields:
+
+phoneNumber
+content
+3. PushNotification
+
+Fields:
+
+deviceId
+title
+content
+Create a Generic Notification Service
+
+Implement a class named:
+
+NotificationService
+
+Inside the class, create a generic method:
+
+<T> void send(T message)
+Expected Behavior
+
+The service should:
+
+Accept any notification type.
+Detect the message type.
+Display a delivery log appropriate for that notification.
+
+
+Sample Output
+Sending Email...
+To: user@gmail.com
+Subject: Welcome
+Status: Delivered
+
+Sending SMS...
+To: 9841XXXXXX
+Status: Delivered
+
+Sending Push Notification...
+Device: DEV-123
+Status: Delivered
+
+Constraints
+Only one send() method should be used.
+Do not create separate sendEmail(), sendSMS(), or sendPush() methods.
+Use Generics to make the service reusable.
+
+
+Concepts Practiced
+Generic Methods
+Type Identification
+Reusable Service Design
