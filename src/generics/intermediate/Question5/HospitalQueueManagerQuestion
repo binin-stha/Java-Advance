@@ -1,0 +1,65 @@
+Problem G5: Hospital Queue Manager
+
+Difficulty: Intermediate
+
+Scenario
+
+A large hospital manages different queues throughout the day. Patients wait to meet doctors, appointments are scheduled in sequence, and doctors may also be assigned to departments using queue-based scheduling.
+
+Instead of creating separate queue implementations for each entity, the hospital wants a single reusable queue management system.
+
+Requirements
+
+Create a generic queue manager capable of handling any type of hospital-related object.
+
+Create the Following Classes
+
+Doctor
+Fields:
+doctorId
+doctorName
+specialization
+
+Patient
+Fields:
+patientId
+patientName
+age
+
+Appointment
+Fields:
+appointmentId
+appointmentDate
+purpose
+
+Create Generic Queue Manager
+QueueManager<T>
+Implement Operations
+void enqueue(T item)
+T dequeue()
+void displayQueue()
+
+Expected Behavior
+The queue should follow FIFO (First-In-First-Out) principles.
+
+Sample Output
+Patient Queue
+1. Ram Sharma
+2. Sita Karki
+3. Hari Joshi
+
+Dequeued: Ram Sharma
+
+Remaining Queue
+1. Sita Karki
+2. Hari Joshi
+
+Constraints
+QueueManager must work for all entity types.
+Avoid duplicate queue implementations.
+Use Generics for type safety.
+
+Concepts Practiced
+Generic Classes
+Queue Data Structures
+Type Safety
